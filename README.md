@@ -157,7 +157,10 @@ And let us know. Prefix the commands with sudo if you are using a user (non-root
   pacman-key --init
   pacman-key --populate archlinux
   ```
-  
+如果还没有解决，看一下是不是配置了archlinuxcn，可能没有安装 archlinuxcn的keyring
+
+`pacman -Sy archlinuxcn-keyring`
+
 # pacman安装paru时出现ssl证书错误
 
 解决办法：https://www.cnblogs.com/james-wangx/p/16111521.html `sudo timedatectl set-ntp true`
